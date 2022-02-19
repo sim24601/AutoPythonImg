@@ -1,0 +1,5 @@
+images/
+opt/
+*.jpg
+images.zip
+*.pyc
