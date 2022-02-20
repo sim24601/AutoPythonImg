@@ -34,5 +34,6 @@ def main():
                 print("Update successful : {}".format(response.status_code))
     del obj, item, response, infile
 
+
 if __name__ == "__main__":
     main()

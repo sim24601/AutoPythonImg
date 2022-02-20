@@ -4,3 +4,5 @@ opt/
 images.zip
 *.pyc
 *.txt
+car_sales.json
+fruit_junk.old
