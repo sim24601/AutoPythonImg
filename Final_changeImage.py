@@ -3,8 +3,8 @@
 import os
 from PIL import Image
 
-path = "./images/"
-target_directory = "/opt/icons/"
+path = "./supplier-data/images/"
+target_directory = "./supplier-data/images/"
 
 
 def main():
@@ -13,8 +13,8 @@ def main():
             outfile = os.path.join(target_directory, infile.name)
             try:
                 with Image.open(infile.path) as img:
-                    img.convert('RGB').resize((128, 128)).transpose(
-                        method=Image.ROTATE_270).save(outfile, "JPEG")
+                    img.convert('RGB').resize((600, 400)).save(
+                        outfile+".jpeg", "JPEG")
             except OSError as err:
                 print(err)
     del infile, outfile
